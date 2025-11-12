@@ -1,0 +1,54 @@
+/*親コンテナ1*/
+.games_wrapper {
+  display: flex;           /* 横並びにする */
+  justify-content: center; /* 全体を中央寄せ */
+  gap: 20px;               /* コンテナ間の余白 */
+  flex-wrap: wrap;         /* 画面が狭い場合は下に折り返す */
+}
+
+/*コンテナ基礎*/
+.game_contena {
+  width: 300px;       
+  height: 400px;      /* ボタン分も少し余裕を持たせる */
+  margin: 20px 10px; /* 上下20px、左右10px */  
+
+  display: flex;          
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;     
+
+  border: 2px solid #ccc;  
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;       /* 内側の余白を追加 */
+}
+
+.game_contena img{
+  width: 80%;    
+  height: auto;
+}
+
+.game_contena p {
+  margin-top: 10px; 
+  font-size: 16px;
+  text-align: center;
+}
+
+.game_contena button {
+  margin-top: 15px;          /* 上の文字との余白 */
+  padding: 10px 20px;        /* ボタンの大きさ */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* 緑色 */
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;          /* ホバーのアニメーション */
+}
+
+.game_contena button:hover {
+  background-color: #45a049; /* ホバーで少し暗くなる */
+}
+/*コンテナ基礎*/
+
+
